@@ -1,15 +1,20 @@
-# Objective 1 
+effect# Objective 1 
 1. How would you access a *NIX server remotely in order to debug a problem?
 ```
-I do not have any experience about NIX server but I think You would be able to run your application 
+To be honest I do not have any experience about NIX server but I think you would be able to run your application 
 in your server with choosing an open port for listening and tracking a problem during running your 
-application and according the open port you will be able to debug your problem by using some tools 
-such Intellij and Eclipse.They have a facility to listen the open port in specific server.
+application and according the open port you will be able to debug your problem by using
+Intellij and Eclipse.They have a facility to listen the open port in specific server.
+And you can make a break point in your code and during sending a requrst or getting a response you should be able to
+debug your code step by step.
+For example:
+java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 -jar jarName.jar
+That means port 5005 is a listen port to debug a problem.
 ```
 2. How would you version your application?
 ```
 versioning in the application can be really important because on the versioning anyone can understand about 
-changing inside of application. as usual versioning consists three things such as MAJOR.MINOR.PATCH
+changing inside of the application. as usual versioning consists three things such as MAJOR.MINOR.PATCH
 that means:
 MAJOR version means when you have or make incompatible API changes.
 MINOR version means when you add functionality in a backwards-compatible manner.
@@ -23,7 +28,9 @@ such as jenkins, docker, kubernetes, GIT and etc that they give us a lot of faci
 your team and even for deployment.
 for example a simple push in your repository can run automatically a build trigger on the jenkins.
 and then jenkins can make a version of application and docker should be able to deploy them.
-And also a jira application can help you to make or deliver your application in your team.
+The effect of using devops culture can be definitely useful to devilver your application in your team.
+Devops culture would be able to help us for betterment to devliver and create large application.
+And also using some tools such as Jira in development environment can help us to complete this way.  
 ```
 4. If you would have to implement an authorisation / authentication system, what kind of patterns you
 would choose?
@@ -86,22 +93,22 @@ You can use these following stack technology to make the application more enterp
  a record in this table.
  There are 2 different approaches to show the last access time of a book.
  
- ## approach 1
+ ## Approach 1
  1- You would be able to create a SQL query and getting last access date of the book.
  for example : select max(date_access) from book_access where bookID=1
- ## pros and cons approach 1
+ ## Pros and cons approach 1
  1. Redundancy of data in approach 1 is really low .
  2. you do not need to have a update command.You have only a insert command.
- 3. it is really fast during the giving a book a client but really slow during the getting last access time of o book.
- 4. It is really slow during the getting last access time of a book.
+ 3. It is really fast during the giving a book a client but can be really slow during the getting last access time of the book.
+
  
- ## approach 2
+ ## Approach 2
 You would be able to create a field in book table and each time when a client wants to access a book you can update 
 The field of book table by value of current date and insert a record in book_access at the same time. 
 With this way you do not need to creat a sql query and all time when you load a book the last access time is loaded. 
-## pros and cons approach 2 
+## Pros and cons approach 2 
 1. Redundancy of data in approach 2 is really high because you have to save the last time of a book in 2 table.
-2. It is really slow during the giving a book a client but really fast during the getting last access time of a book.
+2. It is really slow during the giving a book a client but really fast during the getting last access time of the book.
 3. you need to have a update and insert command.
 
 
