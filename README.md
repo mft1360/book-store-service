@@ -27,10 +27,14 @@ We can use CI/CD of devops culture. In this area we will be able to use a plenty
 such as jenkins, docker, kubernetes, GIT and etc that they give us a lot of facilities to deliver your application to
 your team and even for deployment.
 for example a simple push in your repository can run automatically a build trigger on the jenkins.
-and then jenkins can make a version of application and docker should be able to deploy them.
+And then jenkins can make a version of application and docker should be able to deploy them.
 The effect of using devops culture can be definitely useful to devilver your application in your team.
 Devops culture would be able to help us for betterment to devliver and create large application.
-And also using some tools such as Jira in development environment can help us to complete this way.  
+In my opinion using agile methodology should be used.Due to the agile methodology, the development process is aligned to deliver the changing business requirement.
+In agile methodology we have some ceremonies such as Scrum planning, Scrum review, Scrum Daily stand up, and scrum retrospective.
+for example Scrum Daily stand up can be one of the best way to devliver your application in your team.
+Because in the Scrum Daily stand up you are able to decsribe about your tasks and activities in your team members.
+Mix of agile and devops culture help us for having a good procees of create application. 
 ```
 4. If you would have to implement an authorisation / authentication system, what kind of patterns you
 would choose?
@@ -117,7 +121,7 @@ In my opinion choosing approach 1 and 2 can be selected. It depends on how much 
 If we have a small application with a few data approach 1 should be selected.Redundancy of data in approach 1 is really low.
 If we have a lot of transaction, approach 2 should be selected because in this way retrieving data can be really fast.
 
-Eventually if I want choose one approach I choose approach 1 and as time goes on if I see that I will have a lot of data
+Eventually if I want choose one approach I will choose approach 1 and as time goes on if I see that I will have a lot of data
 I can convert approach 1 to approach 2.     
 
   
